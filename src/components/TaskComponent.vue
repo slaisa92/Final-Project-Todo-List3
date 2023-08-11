@@ -101,4 +101,5 @@ const completedTask = async () => {
 [data-completed="false"] .check-btn:hover * {
     opacity: 1;
 }
+
 </style>
