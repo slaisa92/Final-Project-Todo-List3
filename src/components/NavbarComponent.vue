@@ -4,7 +4,6 @@ import { useRouter } from 'vue-router'
 
 const userStore = useUserStore();
 const router = useRouter();
-
 const signOut = () => {
   userStore.signOut();
   router.push('/');
@@ -14,7 +13,7 @@ const signOut = () => {
   <nav class="navbar contrast-primary-background-color">
     <div class="container-fluid">
       <div>
-        <RouterLink to="/" class="navbar-brand"><img src="@/assets/logo.png" alt="logo" height="60"></RouterLink>
+        <RouterLink to="/" class="navbar-brand"><img src="@/assets/Logo.webp" alt="logo" height="100"></RouterLink>
       </div>
       <div>
         <div v-if="!userStore.user">

@@ -32,10 +32,10 @@ const completedTask = async () => {
         <li class="list-group-item list-group-item-action p-0" :data-completed="task.is_complete">
             <div class="d-flex flex-row justify-content-between align-items-center ">
                 <div class="p-2 d-flex flex-row justify-content-between align-items-center gap-3">
-                 
+                    <!--COMPLETED/INCOMPLETED BUTTON-->
                     <button @click="completedTask" class="btn rounded-circle p-0 d-inline-flex check-btn"><lord-icon
                             src="https://cdn.lordicon.com/jvihlqtw.json" :trigger="task.is_complete ? 'click' : 'hover'"
-                            colors="primary:#ee6d66,secondary:#545454" stroke="100" state="hover-2"
+                            colors="primary:#228B22,secondary:#228B22" stroke="300" state="hover-2"
                             style="width:20px;height:20px">
                         </lord-icon></button>
                     <div class="p-2 flex-row">
@@ -45,23 +45,23 @@ const completedTask = async () => {
                     </div>
                 </div>
                 <div class="p-2 flex-row">
-               
+                    <!--UPDATE BUTTON-->
                     <button @click="updateDialog = !updateDialog" class="btn p-0" data-bs-toggle="modal"
                         data-bs-target="#updateModal"> <lord-icon src="https://cdn.lordicon.com/bxxnzvfm.json"
-                            trigger="hover" colors="primary:#3a3347,secondary:#f4a09c,tertiary:#f9c9c0,quaternary:#ebe6ef"
-                            state="hover-2" style="width:35px;height:35px">
+                            trigger="hover" colors="primary:#228B22,secondary:#FFA07A,tertiary:#228B22,quaternary:#FFFF00"
+                            state="hover-2" style="width:60px;height:60px">
                         </lord-icon> </button>
 
-                
+                    <!-- DELETE BUTTON-->
                     <button @click="modalActive = !modalActive" class="btn p-0" type="button"><lord-icon
                             src="https://cdn.lordicon.com/qjwkduhc.json" trigger="hover"
-                            colors="primary:#646e78,secondary:#f4a09c,tertiary:#ebe6ef" state="hover-empty"
-                            style="width:30px;height:30px">
+                            colors="primary:#228B22,secondary:#228B22,tertiary" state="hover-empty"
+                            style="width:60px;height:60px">
                         </lord-icon>
                     </button>
                 </div>
             </div>
- 
+            <!--DELETE DIALOG -->
             <ModalComponent :modalActive="modalActive" modalTitle="Delete Task">
                 <div class="modal-body">
                     <p>Are you sure do you want to delete?</p>
@@ -69,12 +69,12 @@ const completedTask = async () => {
                 <div class="modal-footer d-flex justify-content-end">
                     <button @click="deleteSubmit" type="button" class="btn btn-primary align-content-center">Delete
                         <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="loop" delay="1000"
-                            colors="primary:#ffffff" style="width:20px;height:20px">
+                            colors="primary:#228B22" style="width:20px;height:20px">
                         </lord-icon>
                     </button>
                 </div>
             </ModalComponent>
-      
+            <!-- UPDATE DIALOG -->
             <form @submit.prevent="updateTask" v-show="updateDialog">
                 <div class="input-group">
                     <input type="text" placeholder="Edit your task" class="form-control" v-model="title" minlength="4"

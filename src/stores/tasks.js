@@ -39,7 +39,6 @@ export const useTaskStore = defineStore('tasks', {
           }
         ])
         .select();
-
       if (error) throw error;
       this.tasks.unshift({ title, is_complete: false });
     },

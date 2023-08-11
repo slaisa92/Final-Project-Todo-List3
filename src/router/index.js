@@ -3,6 +3,7 @@ import { useUserStore } from '@/stores/user';
 import SignInView from '@/views/SignInView.vue';
 import SignUpView from '@/views/SignUpView.vue';
 import TasksView from '@/views/TasksView.vue';
+
 import ResetComponent from '@/components/ResetComponent.vue';
 import AuthComponent from '@/components/AuthComponent.vue';
 import UpdatePasswordComponent from '@/components/UpdatePasswordComponent.vue';

@@ -7,7 +7,6 @@ import { useRouter } from 'vue-router';
 
 const userStore = useUserStore();
 const router = useRouter();
-
 const email = ref();
 const schema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('This field is required!'),
@@ -24,6 +23,8 @@ const handleSubmit = async (value) => {
             <h4 class="card-title">Forgot your password?</h4>
             <p class="card-text">Enter your user account's verified email address and we will send you a password reset link
             </p>
+            <div>
+            </div>
             <Form :validation-schema="schema" @submit="handleSubmit" class="d-flex flex-column">
                 <div class="mb-3">
                     <Field id="input-email" name="email" type="email" placeholder="Write your email" class="form-control" />

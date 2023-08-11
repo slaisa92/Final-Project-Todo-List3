@@ -7,7 +7,6 @@ export const useUserStore = defineStore('user', {
   state: () => ({
     user: undefined
   }),
-
   actions: {
     async fetchUser() {
       const {
@@ -49,7 +48,6 @@ export const useUserStore = defineStore('user', {
       if (error) throw error;
       this.user = null;
     },
-
     persist: {
       enabled: true,
       strategies: [

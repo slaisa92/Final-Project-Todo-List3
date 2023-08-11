@@ -20,7 +20,8 @@ const submit = async (values) => {
         router.push('/tasks')
     } catch (err) {
         error.value = err.message;
-    }}
+    }
+}
 </script>
 <template>
     <div class="card card-max-width">

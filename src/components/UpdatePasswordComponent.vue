@@ -13,7 +13,6 @@ const userStore = useUserStore();
 const error = ref();
 const router = useRouter();
 const showPassword = ref(false);
-
 const submit = async (value) => {
     console.log(value.password)
     error.value = '';
