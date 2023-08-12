@@ -5,10 +5,8 @@
     <header>
       <NavbarComponent />
     </header>
-
     <main class="">
       <div class="p-sm-5 h-100">
-
         <RouterView />
       </div>
     </main>
