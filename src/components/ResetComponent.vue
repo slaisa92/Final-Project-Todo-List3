@@ -11,7 +11,6 @@ const email = ref();
 const schema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('This field is required!'),
 });
-
 const handleSubmit = async (value) => {
     await userStore.resetPassword(value.email)
     router.push('/');

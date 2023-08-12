@@ -9,8 +9,7 @@ const userStore = useUserStore();
 const title = ref();
 onMounted(async () => {
     await taskStore.fetchTasks()
-}
-)
+})
 const addSubmit = async () => {
     await taskStore.addTask(title.value)
     title.value = '';

@@ -4,7 +4,6 @@
 html, body {
   margin: 0px;
   padding: 0px;
-
 }
 #canvas-basic {
   position: absolute;
@@ -22,7 +21,6 @@ html, body {
   max-width: 600px;
   margin: 0 auto;
 }
-/* base colors */
 :root{
 --mint-green: rgb(6, 161, 151);
 --ice-blue: rgb(144, 197, 21);

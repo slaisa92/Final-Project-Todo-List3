@@ -8,12 +8,10 @@ import './assets/main.css';
 
 const pinia = createPinia();
 pinia.use(piniaPersist);
-
 const app = createApp(App);
 app.use(pinia);
 app.use(router);
 app.mount('#app');
-
 new Granim({
   element: '#canvas-basic',
   direction: 'diagonal',

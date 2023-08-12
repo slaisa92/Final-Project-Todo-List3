@@ -17,8 +17,7 @@ export const useTaskStore = defineStore('tasks', {
     },
     allTasks() {
       return this.tasks;
-    }
-  },
+    }},
   actions: {
     async fetchTasks() {
       const { data, error } = await supabase

@@ -27,7 +27,6 @@ const props = defineProps(['modalActive', 'modalTitle'])
 .modal-fade-leave-to {
     opacity: 0;
 }
-
 .modal-fade-enter-active,
 .modal-fade-leave-active {
     transition: 0.25s ease all;

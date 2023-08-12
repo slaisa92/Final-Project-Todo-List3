@@ -27,7 +27,6 @@ const submit = async (values) => {
     <div class="card card-max-width">
         <div class="p-5">
             <h4 class="card-title">Sign In</h4>
-
             <div class="alert alert-danger" role="alert" v-if="error">
                 {{ error }}
             </div>

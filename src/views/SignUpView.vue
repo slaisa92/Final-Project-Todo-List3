@@ -10,6 +10,7 @@ const schema = yup.object().shape({
     password: yup.string().min(6, 'Minimum length is 6 characters').required('This field is required!'),
     confirmPassword: yup.string().required('This field is required!').oneOf([yup.ref('password')], 'Passwords do not match')
 })
+
 const router = useRouter();
 const userStore = useUserStore()
 const error = ref();

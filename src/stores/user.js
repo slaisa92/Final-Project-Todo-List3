@@ -2,7 +2,6 @@
 
 import { defineStore } from 'pinia';
 import { supabase } from '../supabase';
-
 export const useUserStore = defineStore('user', {
   state: () => ({
     user: undefined
