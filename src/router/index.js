@@ -44,7 +44,6 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 });
-
 router.beforeEach(async (to) => {
   const userStore = useUserStore();
   if (userStore.user === undefined) {
