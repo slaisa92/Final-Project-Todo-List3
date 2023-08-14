@@ -15,8 +15,8 @@ const isSignUp = ref(false);
             }}
         </button>
     </div>
-    <SignUpView v-if="isSignUp" />
-    <SignInView v-else />
+    <SignUpView v-if="isSignUp"/>
+    <SignInView v-else/>
 </template>
   
 
