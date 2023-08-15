@@ -24,7 +24,7 @@ html, body {
 :root{
 --mint-green: rgb(6, 161, 151);
 --ice-blue: rgb(144, 197, 21);
---melon: rgb(8, 109, 167); /*navbar */
+--melon: rgb(8, 167, 48); /*navbar */
 --charcoal: #274156ff; /* textos */
 --light-coral: rgb(9, 185, 33); /*buttons*/
 }

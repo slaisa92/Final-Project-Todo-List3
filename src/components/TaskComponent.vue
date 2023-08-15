@@ -36,7 +36,7 @@ const completedTask = async () => {
                     <button @click="completedTask" class="btn rounded-circle p-0 d-inline-flex check-btn"><lord-icon
                             src="https://cdn.lordicon.com/jvihlqtw.json" :trigger="task.is_complete ? 'click' : 'hover'"
                             colors="primary:#228B22,secondary:#228B22" stroke="300" state="hover-2"
-                            style="width:20px;height:20px">
+                            style="width: 25px;px;height:25px">
                         </lord-icon></button>
                     <div class="p-2 flex-row">
                         <p class="fs-6 m-0" :class="task.is_complete ? 'text-decoration-line-through' : ''">{{ task.title }}
