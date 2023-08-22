@@ -12,6 +12,7 @@ onMounted(async () => {
 })
 const addSubmit = async () => {
     await taskStore.addTask(title.value)
+    await taskStore.fetchTasks()
     title.value = '';
 }
 </script>

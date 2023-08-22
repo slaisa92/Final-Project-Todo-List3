@@ -16,7 +16,7 @@ const day = ref(date.value.slice(8, 10))
 const deleteSubmit = async () => {
     await taskStore.deleteTask(props.task)
     modalActive.value = !modalActive.value
-}
+}     
 const updateTask = async () => {
     await taskStore.updateTask(props.task, title.value)
     title.value = ''
@@ -25,7 +25,7 @@ const updateTask = async () => {
 const completedTask = async () => {
     await taskStore.completeTask(props.task, !completed.value)
     completed.value = !completed.value
-}
+}     
 </script>
 <template>
     <div>
