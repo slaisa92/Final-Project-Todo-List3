@@ -20,7 +20,7 @@ new Granim({
     'default-state': {
       gradients: [
         ['#FAEBD7', '#00FFFF'], 
-        ['#7FFFD4', '#8A2BE2'], 
+        ['#DEB887', '#6495ED'], 
         ['#00FFFF', '#008B8B']  
       ]
     }
