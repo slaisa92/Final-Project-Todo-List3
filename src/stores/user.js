@@ -32,7 +32,7 @@ export const useUserStore = defineStore('user', {
     },
     async resetPassword(email) {
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: 'https://slaisa1.netlify.app/reset-password'
+        redirectTo: 'https://slaisa1.netlify.app/update-password'
       });
       if (error) throw error;
     },
