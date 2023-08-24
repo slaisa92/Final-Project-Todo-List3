@@ -21,7 +21,7 @@ new Granim({
       gradients: [
         ['#FAEBD7', '#00FFFF'], 
         ['#DEB887', '#6495ED'], 
-        ['#00FFFF', '#008B8B']  
+        ['#4B0082', '#D3D3D3']  
       ]
     }
   }
