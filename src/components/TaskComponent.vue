@@ -35,7 +35,7 @@ const completedTask = async () => {
                     <!--COMPLETED/INCOMPLETED BUTTON-->
                     <button @click="completedTask" class="btn rounded-circle p-0 d-inline-flex check-btn"><lord-icon
                             src="https://cdn.lordicon.com/jvihlqtw.json" :trigger="task.is_complete ? 'click' : 'hover'"
-                            colors="primary:#228B22,secondary:#1E90FF" stroke="300" state="hover-2"
+                            colors="primary:#228B22,secondary:#228B22" stroke="300" state="hover-2"
                             style="width: 25px;px;height:25px">
                         </lord-icon></button>
                     <div class="p-2 flex-row">
@@ -55,7 +55,7 @@ const completedTask = async () => {
                     <!-- DELETE BUTTON-->
                     <button @click="modalActive = !modalActive" class="btn p-0" type="button"><lord-icon
                             src="https://cdn.lordicon.com/qjwkduhc.json" trigger="hover"
-                            colors="primary:#228B22,secondary:#1E90FF,tertiary" state="hover-empty"
+                            colors="primary:#228B22,secondary:#228B22,tertiary" state="hover-empty"
                             style="width:60px;height:60px">
                         </lord-icon>
                     </button>
